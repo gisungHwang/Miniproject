@@ -14,20 +14,40 @@
    html{
         background-color: gainsboro;
     }
+
+    .h1_div {
+        background-color: rgb(0, 85, 119);
+        text-align: center;
+    }
+    .h1_pix{
+     text-align: left;
+     position: fixed;
+     padding-top: 20px;
+    }
+
     h1{
         color: gold ;
-        background-color: rgb(0, 85, 119);
+        /* background-color: rgb(0, 85, 119); */
         text-align: center;
         text-shadow: 4px 3px 3px red;
         font-size: 55px;
         padding-top: 10px;
         padding-bottom: 10px;        
+        display: inline;
+        vertical-align: middle;
     }
 
-    h1 .h1_span:hover {
+    h1:hover {
         filter:
         drop-shadow(5px 5px 5px yellow)
         drop-shadow(5px 5px 5px yellow)
+    }
+
+    .next_btn {
+        position: relative;
+        right: -700px;
+        vertical-align: middle;
+        cursor: pointer;
     }
 
     img {
@@ -114,7 +134,7 @@
         float:right;
         width: 22%;
         border-left: 1px solid black;
-        border-bottom: 1px solid black;
+        /* border-bottom: 1px solid black; */
         padding-left: 40px;
         padding-bottom: 50px;
         background-color:gainsboro;
@@ -161,11 +181,15 @@
 <body>
     <hr>
     <header id="page_header">
-    <h1>
-        <span class="h1_span" title="Welcome Golden Boot!!">
-            Golden Boot
-        </span>
-    </h1><hr>
+    <div class="h1_div">
+        <!-- <div class="h1_pix">
+            <button>이전페이지</button>
+            <button>다음페이지</button>
+        </div> -->
+        <h1 class="h1_span" title="Welcome Golden Boot!!"> Golden Boot</h1>
+        <button class="next_btn" onclick = "location.href = './과제2.html' "></a>다음페이지</button>
+    </div>
+    <hr>
     </header>
     <section id="posts">
     <h2>골든 부트(Golden Boot)란 무엇인가?</h2>
@@ -232,22 +256,12 @@
                 <aside id="sidebar4">
                     <nav>
                     <a  href="./과제2.html" target="_blank">
-                        >>> 역대 골든부트 수상자들 보러가기 >>>
+                        <!-- >>> 역대 골든부트 수상자들 보러가기 >>> -->
                     </a><br><br><br><br>
                     <a  href="./과제3.html" target="_blank">
-                        >>> 21-22시즌 득점왕들의 골모음 보러가기 >>>
+                        <!-- >>> 21-22시즌 득점왕들의 골모음 보러가기 >>> -->
                     </a>
                 </nav>
                 </aside>
-            
-
-
-
-
 </body>
 </html>
-
-
-<ul>
-    
-</ul>
