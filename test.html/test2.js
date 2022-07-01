@@ -63,4 +63,4 @@ var person = {
     name :'HWANG',
     age : 27
 };
-document.write(Object.keys(person.first));
+document.write(Object.keys(person.));
